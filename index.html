@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextSem.in - Previous Year Question Papers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h2 class="brand-title">NextSem.in</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-link" data-section="home">Home</a></li>
+                <li><a href="#" class="nav-link" data-section="analysis">Analysis</a></li>
+                <li><a href="#" class="nav-link" data-section="study-tips">Study Tips</a></li>
+                <li><a href="#" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="hero">
+                <h1 class="hero-title">Master Your Academics</h1>
+                <p class="hero-subtitle">Access comprehensive collection of previous year question papers to excel in your examinations</p>
+            </div>
+            
+            <div class="year-selection">
+                <h2 class="section-heading">Select Your Academic Year</h2>
+                <div class="year-cards">
+                    <div class="year-card clickable" data-year="1">
+                        <div class="year-number">1st</div>
+                        <div class="year-label">Year</div>
+                        <div class="year-status available">Available Now</div>
+                    </div>
+                    <div class="year-card">
+                        <div class="year-number">2nd</div>
+                        <div class="year-label">Year</div>
+                        <div class="year-status">Coming Soon</div>
+                    </div>
+                    <div class="year-card">
+                        <div class="year-number">3rd</div>
+                        <div class="year-label">Year</div>
+                        <div class="year-status">Coming Soon</div>
+                    </div>
+                    <div class="year-card">
+                        <div class="year-number">4th</div>
+                        <div class="year-label">Year</div>
+                        <div class="year-status">Coming Soon</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Choice Section -->
+        <section id="choice" class="section">
+            <div class="choice-container">
+                <button class="back-btn" data-target="home">← Back to Home</button>
+                <h2 class="section-heading">Select Your Group</h2>
+                
+                <div class="group-cards">
+                    <div class="group-card" data-group="A">
+                        <h3 class="group-title">Group A</h3>
+                        <div class="group-branches">
+                            <span class="branch">CS</span>
+                            <span class="branch">IT</span>
+                            <span class="branch">EE</span>
+                            <span class="branch">EX</span>
+                            <span class="branch">EI</span>
+                            <span class="branch">FT</span>
+                            <span class="branch">AT</span>
+                            <span class="branch">MI</span>
+                            <span class="branch">BT</span>
+                            <span class="branch">BM</span>
+                        </div>
+                    </div>
+                    
+                    <div class="group-card" data-group="B">
+                        <h3 class="group-title">Group B</h3>
+                        <div class="group-branches">
+                            <span class="branch">AU</span>
+                            <span class="branch">ME</span>
+                            <span class="branch">IP</span>
+                            <span class="branch">CE</span>
+                            <span class="branch">IEM</span>
+                            <span class="branch">TX</span>
+                            <span class="branch">EC</span>
+                            <span class="branch">CM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PYQs Section -->
+        <section id="pyqs" class="section">
+            <div class="pyqs-container">
+                <button class="back-btn" data-target="choice">← Back to Groups</button>
+                <h2 class="section-heading">Previous Year Question Papers</h2>
+                
+                <div class="semester-tabs">
+                    <button class="tab-btn active" data-semester="1">1st Semester</button>
+                    <button class="tab-btn" data-semester="2">2nd Semester</button>
+                </div>
+                
+                <div class="filters">
+                    <select class="filter-select" id="subject-filter">
+                        <option value="">All Subjects</option>
+                    </select>
+                    
+                    <select class="filter-select" id="year-filter">
+                        <option value="">All Years</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                    </select>
+                </div>
+                
+                <div class="papers-grid" id="papers-grid">
+                    <!-- Papers will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Analysis Section -->
+        <section id="analysis" class="section">
+            <div class="coming-soon">
+                <h2 class="section-heading">Paper Analysis</h2>
+                <div class="coming-soon-card">
+                    <h3>Coming Soon</h3>
+                    <p>We're working on detailed analysis of question papers to help you understand patterns and important topics.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Study Tips Section -->
+        <section id="study-tips" class="section">
+            <div class="coming-soon">
+                <h2 class="section-heading">Study Tips</h2>
+                <div class="coming-soon-card">
+                    <h3>Coming Soon</h3>
+                    <p>Expert study tips and strategies to help you excel in your examinations will be available here.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="about-container">
+                <h2 class="section-heading">About NextSem.in</h2>
+                <div class="about-content">
+                    <p class="about-description">
+                        NextSem.in is your comprehensive platform for accessing previous year question papers. 
+                        We aim to help students excel in their academic journey by providing organized, 
+                        easily accessible study materials.
+                    </p>
+                    
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <h3>Comprehensive Collection</h3>
+                            <p>Access question papers from multiple years and subjects</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3>Easy Navigation</h3>
+                            <p>Find papers quickly with our intuitive filtering system</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3>Regular Updates</h3>
+                            <p>Latest question papers added regularly</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3>Mobile Friendly</h3>
+                            <p>Access papers anytime, anywhere on any device</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="contact-container">
+                <h2 class="section-heading">Contact Us</h2>
+                <div class="contact-content">
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-group">
+                                <label class="form-label">Name</label>
+                                <input type="text" class="form-control" id="contact-name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" id="contact-email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label">Message</label>
+                                <textarea class="form-control" id="contact-message" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                        </form>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <p>Have questions or suggestions? We'd love to hear from you!</p>
+                        <div class="contact-details">
+                            <div class="contact-detail">
+                                <strong>Email:</strong> info@nextsem.in
+                            </div>
+                            <div class="contact-detail">
+                                <strong>Support:</strong> support@nextsem.in
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Notification -->
+    <div class="notification hidden" id="notification">
+        <div class="notification-content">
+            <span class="notification-message"></span>
+            <button class="notification-close">×</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
